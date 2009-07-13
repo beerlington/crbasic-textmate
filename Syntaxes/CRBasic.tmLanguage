@@ -73,7 +73,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(abs|acceptdatarecords|acos|addprecise|am25t|as|average|battery|beginprog|brhalf|call|calltable|datainterval|datatable|delay|displaymenu|displayvalue|endmenu|endsub|endsubmenu|endprog|endtable|fieldnames|getvariables|iftime|log|maximum|minimum|modbusmaster|movebytes|nextscan|not|paneltemp|pulsecount|realtime|sample|scan|sdi12recorder|senddata|serialclose|serialflush|serialin|serialinblock|serialopen|serialoutblock|splitstr|sub|submenu|stddev|sw12|tcdiff|tcpopen|therm108|totalize|voltdiff|voltse|windvector)\b</string>
+			<string>(?i)\b(abs|acceptdatarecords|acos|addprecise|am25t|as|average|battery|beginprog|brhalf|call|calltable|datainterval|datatable|delay|displaymenu|displayvalue|endmenu|endsub|endsubmenu|endprog|endtable|fieldnames|getvariables|iftime|log|maximum|minimum|modbusmaster|movebytes|nextscan|not|paneltemp|pulsecount|realtime|sample|scan|sdi12recorder|senddata|serialclose|serialflush|serialin|serialinblock|serialopen|serialoutblock|splitstr|submenu|stddev|sw12|tcdiff|tcpopen|therm108|totalize|voltdiff|voltse|windvector)\b</string>
 			<key>name</key>
 			<string>support.function.all.crbasic</string>
 		</dict>
@@ -88,6 +88,23 @@
 			<string>(?i)\b(const|dim|public|long|string|float|alias)\b</string>
 			<key>name</key>
 			<string>support.type.all.crbasic</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.sub.crbasic</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.function.all.crbasic</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)(Sub\s+)([A-Za-z0-9]+)</string>
 		</dict>
 		<dict>
 			<key>match</key>
