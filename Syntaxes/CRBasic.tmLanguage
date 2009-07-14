@@ -31,7 +31,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(\*|\+|\-|/|=|\^)</string>
+			<string>(\*|\+|\-|=|/|\^)</string>
 			<key>name</key>
 			<string>keyword.operator.arithmetic.crbasic</string>
 		</dict>
@@ -61,31 +61,52 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(units)\b</string>
-			<key>name</key>
-			<string>storage.type.const.crbasic</string>
-		</dict>
-		<dict>
-			<key>match</key>
 			<string>\".*\"</string>
 			<key>name</key>
 			<string>string.quoted.double.crbasic</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.type.all.crbasic</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.other.all.crbasic</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.arithmetic.crbasic</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.single.crbasic</string>
+				</dict>
+			</dict>
 			<key>match</key>
-			<string>(?i)\b(abs|acceptdatarecords|acos|addprecise|am25t|as|average|battery|beginprog|brhalf|call|calltable|datainterval|datatable|delay|displaymenu|displayvalue|endmenu|endsub|endsubmenu|endprog|endtable|fieldnames|getvariables|iftime|log|maximum|minimum|modbusmaster|movebytes|nextscan|not|paneltemp|pulsecount|realtime|sample|scan|sdi12recorder|senddata|serialclose|serialflush|serialin|serialinblock|serialopen|serialoutblock|splitstr|submenu|stddev|sw12|tcdiff|tcpopen|therm108|totalize|voltdiff|voltse|windvector)\b</string>
+			<string>(?i)(units)\s+(\w+)\s*(=)\s*([\w \/%\^]+)</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\b(abs|acceptdatarecords|acos|addprecise|am25t|as|average|battery|brhalf|call|calltable|datainterval|delay|displaymenu|displayvalue|endmenu|endsub|endsubmenu|endprog|endtable|fieldnames|getvariables|iftime|log|maximum|minimum|modbusmaster|movebytes|nextscan|nextsubscan|not|paneltemp|portset|pulsecount|realtime|sample|scan|sdi12recorder|senddata|serialclose|serialflush|serialin|serialinblock|serialopen|serialoutblock|splitstr|subscan|submenu|stddev|sw12|tcdiff|tcpopen|therm108|totalize|voltdiff|voltse|windvector)\b</string>
 			<key>name</key>
 			<string>support.function.all.crbasic</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(com\d|_\d+hz|comsdc\d|ieee4|fp2|true|false|nan|mv\d+|vx\d)\b</string>
+			<string>(?i)\b(com\d|_\d+hz|comsdc\d|true|false|nan|mv\d+|vx\d)\b</string>
 			<key>name</key>
 			<string>support.constant.all.crbasic</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(const|dim|public|long|string|float|alias)\b</string>
+			<string>(?i)\b(const|dim|ieee4|public|long|string|float|fp2|alias)\b</string>
 			<key>name</key>
 			<string>support.type.all.crbasic</string>
 		</dict>
@@ -104,11 +125,34 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)(Sub\s+)([A-Za-z0-9]+)</string>
+			<string>(?i)(sub)\s+(\w+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.datatable.crbasic</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.datatable.all.crbasic</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)(datatable)\((Archive)</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>[A-Za-z0-9_]</string>
+			<string>(?i)\bbeginprog\b</string>
+			<key>name</key>
+			<string>support.function.beginprog.crbasic</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\w+</string>
 			<key>name</key>
 			<string>variable.other.all.crbasic</string>
 		</dict>

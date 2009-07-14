@@ -3,13 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Symbol List</string>
+	<string>Symbol List Sub</string>
 	<key>scope</key>
 	<string>source.crbasic meta.function</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
 		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/(.*)/Sub - $1/</string>
 	</dict>
 	<key>uuid</key>
 	<string>FAB88863-C0D5-40C2-A0E0-AC6460DE4C53</string>
