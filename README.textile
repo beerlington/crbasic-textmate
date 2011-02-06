@@ -15,9 +15,12 @@ I created this TextMate bundle so our company could use it to maintain CRBasic c
 
 h2. About
 
-CRBasic is a proprietary language derived from the BASIC programming language and developed by Campbell Scientific to control their current line of dataloggers. CRBasic programs are created by and edited using the CRBasic Editor which comes with the LoggerNet / PC400 / RTDAQ datalogger supportou will need to download and install the TextMate application prior to installing this bundle. Once installed, your Mac should recognize TMBundle files. Download the latest crbasic-ports keyword, algebraic expressions, and conditional expressions. Dataloggers that use CRBasic include our CR200-series, CR800, CR1000, CR3000, CR5000, and CR9000(X)."
+CRBasic is a proprietary language derived from the BASIC programming language and developed by Campbell Scientific to control their current line of dataloggers. CRBasic programs are created by and edited using the CRBasic Editor which comes with the LoggerNet / PC400 / RTDAQ datalogger support software packages.
 
-More information about the CRBasic programming language can be found in manuals for the dataloggers listed above, found here: http://www.campbellsci.com/manuals
+According to "http://www.campbellsci.com/glossary":http://www.campbellsci.com/glossary, CRBasic is "A datalogger program editor whose structure stems from the BASIC programming language. CRBasic supports keyword, algebraic expressions, and conditional expressions. Dataloggers that use CRBasic include our CR200-series, CR800, CR1000, CR3000, CR5000, and CR9000(X)."
+
+More information about the CRBasic programming language can be found in manuals for the dataloggers listed above, found here: "http://www.campbellsci.com/manuals":http://www.campbellsci.com/manuals
 
 h2. Disclaimer
+
 The CRBasic TextMate bundle is provided as is and is not affiliated with or supported by Campbell Scientific, Inc.
